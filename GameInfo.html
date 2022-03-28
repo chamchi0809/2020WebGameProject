@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GameInfo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-family: 'Gugi', cursive;
+            background-image:url(./MenuBackgroundBottom.png);
+            background-size: 100%;
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-color: #FCF9F0;
+        }
+        p{
+            text-align: center;
+            font-size: 3.2em;
+        }
+        ul{
+            text-align: left;
+            margin-left: 20%;
+            font-size: 2em;
+        }
+        li{
+            margin-top: 50px;
+        }
+        .Arrow{
+            background:url(./ButtonBackground.png) no-repeat;
+            width:40px;
+            height:40px;
+            background-size: 40px 40px;
+            padding-top: 3px;
+            padding-bottom: 10px;
+            padding-left: 8px;
+            
+        }
+        #colon1{
+            position: relative;
+            padding-left: 80px;
+        }
+        #colon2{
+            position: relative;
+            padding-left: 23px;
+        }
+        #colon3{
+            position: relative;
+            padding-left: 76px;
+        }
+        a{
+            position: absolute;
+            right: 5%;
+            font-size: 2em;
+            text-decoration: none;
+            color: #A76900;
+        }
+    </style>
+</head>
+<body>
+    <p>조작 방법</p>
+    <ul>
+        <li>점프<span id="colon1">:</span>&nbsp;<span class="Arrow">↑ &nbsp;&nbsp;</span> </li>
+        <br>
+        <li>슬라이드<span id="colon2">:</span>&nbsp;<span class="Arrow">↓ &nbsp;&nbsp;</span></li>
+        <br>
+        <li>대쉬<span id="colon3">:</span>&nbsp;<span class="Arrow">↑ &nbsp;</span>+ <span class="Arrow">↑&nbsp;&nbsp;</span></li>
+    </ul>
+    <br><br><br><br><br>
+    <a href="./StartScene.html">메인화면>></a>
+</body>
+</html>

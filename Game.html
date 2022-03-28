@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{               
+            position: absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom: 0;
+            margin:auto;
+            border: 1px solid gray;       
+            background-color: gray;            
+        } 
+        div{
+            font-family: 'Gugi Regular';
+            text-align: center;
+            background-color: rgba(0,0,0,.5);
+            background-repeat: no-repeat;            
+            width: 1282px;
+            height: 548px;
+            position:absolute;
+            margin:auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display:none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        a{
+            display:inline-block;
+            overflow:hidden;
+            background:url(./ButtonBackground.png) no-repeat;
+            width:180px;
+            height:40px;
+            background-size: 180px 40px;
+            text-decoration: none;
+            color: black;
+            padding-top: 5px;
+            font-size : 1.5em;
+            text-align: center;            
+        }
+        img{
+            display: none;
+            width: 0;
+            height: 0;
+        }
+        audio{
+            display: none;
+            width: 0;
+            height: 0;
+        }
+        @font-face {
+            font-family: 'Gugi Regular';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Gugi Regular'), url('Gugi-Regular.woff') format('woff');
+        }
+    </style>
+</head> 
+<body>
+    <canvas id="canvas" width="1280" height="548"></canvas>   
+    <div id="deathMenu">
+        <p id=score style="color:white; font-size: larger;">점수: 50 <br>최고점수: 50</p>
+        <a href="./Game.html">다시하기</a>
+        <a href="./StartScene.html">시작메뉴</a>
+    </div>     
+    <img id="player" src="./Spam.png">
+    <img id="whiteBox" src="./WhiteBox.png" >
+    <img id="hangwa" src="./Hangwa.png">
+    <img id="samgyupsal" src="./Samgyupsal.png" alt="">
+    <img id="riceCake" src="./RiceCake.png" alt="">
+    <img id="bg" src="./BG.png" alt="">
+    <img id="woodenTable" src="./WoodenTable.png" alt="">
+    <audio id="dashSFX" preload="auto" controls="none" src="./Whoosh 6_1.wav" ></audio>
+    <audio id="jumpSFX" preload="auto" controls="none" src="./Whoosh 8_4.wav" ></audio>
+    <audio id="slideSFX" preload="auto" controls="none" src="./Coins 05.wav" ></audio>
+    <script src="./GameCode.js"></script> 
+
+</body>
+</html> 
